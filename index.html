@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-123354863-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-123354863-1');
+  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Track Your Order</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="moment.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="nav-left"><img src="./logo.svg" alt="logo"></div>
+      <div class="nav-right">
+        <ul>
+          <li>Products</li>
+          <li>Services</li>
+          <li>Specials</li>
+          <li>Cart</li>
+          <li>Login</li>
+          <li>Sign Up</li>
+        </ul>
+      </div>
+
+    </nav>
+  </header>
+  <main>
+    <h1>Track Your Order</h1>
+    <h4>Order Number: 34197035</h4>
+    <h4>Shipping to: New York, NY</h4>
+    <h3>Your order was placed on <span class="light-blue orderDate"></span> and is expected to arrive on <span class="light-blue expectedDate"></span>.</h3>
+    <hr />
+    <h2>Order Status</h2>
+    <div class="progress">
+      <div class="step">
+        <div class="circle">
+          <span class="label">1</span>
+        </div>
+        <div class="title">Order Received</div>
+      </div>
+      <span class="bar"></span>
+      <div class="step">
+        <div class="circle">
+          <span class="label">2</span>
+        </div>
+        <div class="title">Order Packed</div>
+      </div>
+      <span class="bar"></span>
+      <div class="step">
+        <div class="circle">
+          <span class="label">3</span>
+        </div>
+        <div class="title">Package Shipped</div>
+      </div>
+      <span class="bar"></span>
+      <div class="step">
+        <div class="circle">
+          <span class="label">4</span>
+        </div>
+        <div class="title">Package In Transit</div>
+      </div>
+      <span class="bar"></span>
+      <div class="step">
+        <div class="circle">
+          <span class="label">5</span>
+        </div>
+        <div class="title">Package Received</div>
+      </div>
+    </div>
+    <button class="replay">&#11118</button>
+    <hr />
+    <h2>Expected Arrival</h2>
+    <div class="countdown">
+      <div class="count"><span id="hours"></span>
+        Hours
+      </div>
+      <div class="count"><span id="minutes"></span>
+        Minutes
+      </div>
+      <div class="count"><span id="seconds"></span>
+        Seconds
+      </div>
+
+    </div>
+
+    <hr />
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
